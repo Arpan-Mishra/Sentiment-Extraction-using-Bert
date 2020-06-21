@@ -38,4 +38,4 @@ The aim of the project was to:
 <br>
 We can see the end result as follows: <br>
 
-![Final Result](https://github.com/Arpan-Mishra/Sentiment-Extraction-using-Bert/blob/master/result.gif)
+![Final Result](https://github.com/Arpan-Mishra/Sentiment-Extraction-using-Bert/blob/master/result.gif =50x80)
