@@ -26,7 +26,7 @@ The aim of the project was to:
 ### <b> Model Building </b>
 * First we trained a model using Bert to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
 
-<b> Pre-Processing </b>
+    <b> Pre-Processing </b>
 * The major task for this problem was to pre-process the data so as to make it work with the Bert Model. In the dataloader we take out input text, and first tokenize it using Bert Tokenizer and pass it to out sentiment predictor.
 * We use the sentiment predicted along with the tokenized tweet and cerate out final tokenized model input where the sentiment token corresponds to the Question and the Tweet text is the context.
     `[CLS]Sentiment[SEP]Tweet[SEP]`
