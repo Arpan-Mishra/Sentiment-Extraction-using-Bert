@@ -33,7 +33,7 @@ The aim of the project was to:
 * Use the detected Sentiment and extract the words in the given text which convey the sentiment.
 
 ## Model Building
-* First we trained a model using Bert to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
+* First we fine tuned a Bert model to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
 
     <b> Pre-Processing </b>
 * The major task for this problem was to pre-process the data so as to make it work with the Bert Model. In the dataloader we take our input text, and first tokenize it using Bert Tokenizer and pass it to out sentiment predictor.
