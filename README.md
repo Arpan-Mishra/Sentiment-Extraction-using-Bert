@@ -49,7 +49,7 @@ The aim of the project was to:
 * Using the respective indices, the original tweet and the offsets provided by the Word Piece Tokenizer we convert these indices into our final extracted phrase. (Check out utils.py) <br>
 <br>
 
-<b> Productionisation </b>
+ <b> Productionisation </b>
 * In this step, I built a flask API endpoint that was hosted on a local webserver.
 
 We can see the end result as follows: <br>
