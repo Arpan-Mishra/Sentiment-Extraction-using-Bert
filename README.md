@@ -37,5 +37,5 @@ The aim of the project was to:
 * Using the respective indices, the original tweet and the offsets provided by the Word Piece Tokenizer we convert these indices into out final extracted phrase. (Check out utils.py) <br>
 <br>
 We can see the end result as follows: <br>
+<img src= "https://github.com/Arpan-Mishra/Sentiment-Extraction-using-Bert/blob/master/result.gif">
 
-![Final Result](https://github.com/Arpan-Mishra/Sentiment-Extraction-using-Bert/blob/master/result.gif =50x80)
