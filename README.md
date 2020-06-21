@@ -33,7 +33,7 @@ The aim of the project was to:
 * Use the detected Sentiment and extract the words in the given text which convey the sentiment.
 
 ## Model Building
-* First we fine tuned a Bert model to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
+* First we fine tuned a Bert model to predict the sentiment for a given text on the twitter sentiment extraction data (See data source). <br>
 
     <b> Pre-Processing </b>
 * The major task for this problem was to pre-process the data so as to make it work with the Bert Model. In the dataloader we take our input text, and first tokenize it using Bert Tokenizer and pass it to out sentiment predictor.
@@ -47,6 +47,10 @@ The aim of the project was to:
 * We get 2 output vectors from the model, one corresponds to the starting index and one to the ending index. (Note: the length of the vectors is equal to the max length provided by us).
 * We then take the softmax of the outputs followed by argmax which gives us the final starting and ending index.
 * Using the respective indices, the original tweet and the offsets provided by the Word Piece Tokenizer we convert these indices into our final extracted phrase. (Check out utils.py) <br>
+
+  <b> Performance </b>
+* `Sentiment Prediction Model` - 93% Accuracy
+* ` Sentimen Extraction Model` - 0.704 Jaccard Score (To understand the jaccard metric checkout the data source)
 
   <b> Productionisation </b>
 * In this step, I built a flask API endpoint that was hosted on a local webserver.
