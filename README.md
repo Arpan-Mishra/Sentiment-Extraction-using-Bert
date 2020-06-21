@@ -1,13 +1,24 @@
 # Sentiment-Extraction-using-Bert
 <b>Using Bert to detect the sentiment of a given text and extract the words which contain the detected sentiment.</b><br>
 
-### Methods Used
+## Table of Contents
+  * [Methods Used](#methods-used)
+  * [Technologies](#technologies)  
+  * [Description](#description)
+  * [Model Building](#model-building)
+  * [Credits](#credits)
+  * [Contact](#contact)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+## Methods Used
 * Deep Learning
 * Neural Networks
 * Bert Base
 * NLP
 
-### Technologies
+## Technologies
 * Python, Spyder
 * Pandas
 * Numpy
@@ -23,7 +34,7 @@ The aim of the project was to:
 * Detect the sentiment of a given text. (Positive/Negative)
 * Use the detected Sentiment and extract the words in the given text which convey the sentiment.
 
-### <b> Model Building </b>
+## Model Building
 * First we trained a model using Bert to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
 
     <b> Pre-Processing </b>
