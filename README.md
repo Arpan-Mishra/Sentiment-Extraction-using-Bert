@@ -16,12 +16,14 @@
 * Flask
 * HTML
 
+#### For web framework requirements : `pip install -r requirements.txt`
+
 ## Description
 The aim of the project was to:
 * Detect the sentiment of a given text. (Positive/Negative)
 * Use the detected Sentiment and extract the words in the given text which convey the sentiment.
 
-### <b> Process </b>
+### <b> Model Building </b>
 * First we trained a model using Bert to predict the sentiment for a given text on the twitter sentiment extraction data (See data sources). <br>
 <b> Pre-Processing </b>
 * The major task for this problem was to pre-process the data so as to make it work with the Bert Model. In the dataloader we take out input text, and first tokenize it using Bert Tokenizer and pass it to out sentiment predictor.
@@ -36,6 +38,20 @@ The aim of the project was to:
 * We then take the softmax of the outputs followed by argmax which gives us the final starting and ending index.
 * Using the respective indices, the original tweet and the offsets provided by the Word Piece Tokenizer we convert these indices into out final extracted phrase. (Check out utils.py) <br>
 <br>
+
+<b> Productionisation </b>
+* In this step, I built a flask API endpoint that was hosted on a local webserver.
+
 We can see the end result as follows: <br>
 <img src= "https://github.com/Arpan-Mishra/Sentiment-Extraction-using-Bert/blob/master/result.gif">
 
+## Credits
+* Data Source: https://www.kaggle.com/c/tweet-sentiment-extraction
+* Bert Concept: http://jalammar.github.io/illustrated-bert/
+* Bert Text Extraction Tutorial: https://www.youtube.com/watch?v=XaQ0CBlQ4cY
+* Flask tutorial: https://towardsdatascience.com/predicting-reddit-flairs-using-machine-learning-and-deploying-the-model-using-heroku-part-3-c3cd19374596
+
+## Contact
+* For any queries and feedback please contact me at mishraarpan6@gmail.com
+
+Note: The project is only for education purposes, no plagiarism is intended.
