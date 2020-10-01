@@ -31,6 +31,7 @@
 The aim of the project was to:
 * Detect the sentiment of a given text. (Positive/Negative)
 * Use the detected Sentiment and extract the words in the given text which convey the sentiment.
+* Build a web application where the user can enter the sentence and get the keyword and the sentiment. 
 
 ## Model Building
 * First we fine tuned a Bert model to predict the sentiment for a given text on the twitter sentiment extraction data (See data source). <br>
